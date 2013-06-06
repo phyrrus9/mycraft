@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA565F86176103CF00D8C43F /* rle.c in Sources */ = {isa = PBXBuildFile; fileRef = AA565F85176103CF00D8C43F /* rle.c */; };
-		AAAE71BD175E600200196314 /* image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAAE71BB175E600200196314 /* image.cpp */; };
-		AAAE71BE175E600200196314 /* image.h in Headers */ = {isa = PBXBuildFile; fileRef = AAAE71BC175E600200196314 /* image.h */; };
+		AA565F831760FB6100D8C43F /* screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA565F811760FB6100D8C43F /* screen.cpp */; };
+		AA565F841760FB6100D8C43F /* screen.h in Headers */ = {isa = PBXBuildFile; fileRef = AA565F821760FB6100D8C43F /* screen.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AA565F85176103CF00D8C43F /* rle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rle.c; sourceTree = "<group>"; };
-		AAAE71B4175E5FF600196314 /* liblibimage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibimage.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAAE71BB175E600200196314 /* image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = image.cpp; sourceTree = "<group>"; };
-		AAAE71BC175E600200196314 /* image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image.h; sourceTree = "<group>"; };
+		AA565F781760FB2300D8C43F /* liblibmycraft.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibmycraft.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA565F811760FB6100D8C43F /* screen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = screen.cpp; sourceTree = "<group>"; };
+		AA565F821760FB6100D8C43F /* screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = screen.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AAAE71B1175E5FF600196314 /* Frameworks */ = {
+		AA565F751760FB2300D8C43F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -30,20 +28,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AAAE71AB175E5FF600196314 = {
+		AA565F6F1760FB2200D8C43F = {
 			isa = PBXGroup;
 			children = (
-				AAAE71BB175E600200196314 /* image.cpp */,
-				AAAE71BC175E600200196314 /* image.h */,
-				AA565F85176103CF00D8C43F /* rle.c */,
-				AAAE71B5175E5FF600196314 /* Products */,
+				AA565F811760FB6100D8C43F /* screen.cpp */,
+				AA565F821760FB6100D8C43F /* screen.h */,
+				AA565F791760FB2300D8C43F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AAAE71B5175E5FF600196314 /* Products */ = {
+		AA565F791760FB2300D8C43F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AAAE71B4175E5FF600196314 /* liblibimage.a */,
+				AA565F781760FB2300D8C43F /* liblibmycraft.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,74 +48,73 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		AAAE71B2175E5FF600196314 /* Headers */ = {
+		AA565F761760FB2300D8C43F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAAE71BE175E600200196314 /* image.h in Headers */,
+				AA565F841760FB6100D8C43F /* screen.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AAAE71B3175E5FF600196314 /* libimage */ = {
+		AA565F771760FB2300D8C43F /* libmycraft */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AAAE71B8175E5FF600196314 /* Build configuration list for PBXNativeTarget "libimage" */;
+			buildConfigurationList = AA565F7C1760FB2300D8C43F /* Build configuration list for PBXNativeTarget "libmycraft" */;
 			buildPhases = (
-				AAAE71B0175E5FF600196314 /* Sources */,
-				AAAE71B1175E5FF600196314 /* Frameworks */,
-				AAAE71B2175E5FF600196314 /* Headers */,
+				AA565F741760FB2300D8C43F /* Sources */,
+				AA565F751760FB2300D8C43F /* Frameworks */,
+				AA565F761760FB2300D8C43F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = libimage;
-			productName = libimage;
-			productReference = AAAE71B4175E5FF600196314 /* liblibimage.a */;
+			name = libmycraft;
+			productName = libmycraft;
+			productReference = AA565F781760FB2300D8C43F /* liblibmycraft.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AAAE71AC175E5FF600196314 /* Project object */ = {
+		AA565F701760FB2300D8C43F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Ethan Laur";
 			};
-			buildConfigurationList = AAAE71AF175E5FF600196314 /* Build configuration list for PBXProject "libimage" */;
+			buildConfigurationList = AA565F731760FB2300D8C43F /* Build configuration list for PBXProject "libmycraft" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = AAAE71AB175E5FF600196314;
-			productRefGroup = AAAE71B5175E5FF600196314 /* Products */;
+			mainGroup = AA565F6F1760FB2200D8C43F;
+			productRefGroup = AA565F791760FB2300D8C43F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AAAE71B3175E5FF600196314 /* libimage */,
+				AA565F771760FB2300D8C43F /* libmycraft */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AAAE71B0175E5FF600196314 /* Sources */ = {
+		AA565F741760FB2300D8C43F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAAE71BD175E600200196314 /* image.cpp in Sources */,
-				AA565F86176103CF00D8C43F /* rle.c in Sources */,
+				AA565F831760FB6100D8C43F /* screen.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		AAAE71B6175E5FF600196314 /* Debug */ = {
+		AA565F7A1760FB2300D8C43F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -150,7 +146,7 @@
 			};
 			name = Debug;
 		};
-		AAAE71B7175E5FF600196314 /* Release */ = {
+		AA565F7B1760FB2300D8C43F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -175,7 +171,7 @@
 			};
 			name = Release;
 		};
-		AAAE71B9175E5FF600196314 /* Debug */ = {
+		AA565F7D1760FB2300D8C43F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
@@ -183,7 +179,7 @@
 			};
 			name = Debug;
 		};
-		AAAE71BA175E5FF600196314 /* Release */ = {
+		AA565F7E1760FB2300D8C43F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
@@ -194,25 +190,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AAAE71AF175E5FF600196314 /* Build configuration list for PBXProject "libimage" */ = {
+		AA565F731760FB2300D8C43F /* Build configuration list for PBXProject "libmycraft" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AAAE71B6175E5FF600196314 /* Debug */,
-				AAAE71B7175E5FF600196314 /* Release */,
+				AA565F7A1760FB2300D8C43F /* Debug */,
+				AA565F7B1760FB2300D8C43F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AAAE71B8175E5FF600196314 /* Build configuration list for PBXNativeTarget "libimage" */ = {
+		AA565F7C1760FB2300D8C43F /* Build configuration list for PBXNativeTarget "libmycraft" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AAAE71B9175E5FF600196314 /* Debug */,
-				AAAE71BA175E5FF600196314 /* Release */,
+				AA565F7D1760FB2300D8C43F /* Debug */,
+				AA565F7E1760FB2300D8C43F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AAAE71AC175E5FF600196314 /* Project object */;
+	rootObject = AA565F701760FB2300D8C43F /* Project object */;
 }

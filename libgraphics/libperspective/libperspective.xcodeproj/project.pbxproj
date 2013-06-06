@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA565F86176103CF00D8C43F /* rle.c in Sources */ = {isa = PBXBuildFile; fileRef = AA565F85176103CF00D8C43F /* rle.c */; };
-		AAAE71BD175E600200196314 /* image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAAE71BB175E600200196314 /* image.cpp */; };
-		AAAE71BE175E600200196314 /* image.h in Headers */ = {isa = PBXBuildFile; fileRef = AAAE71BC175E600200196314 /* image.h */; };
+		AA565F9917610B3A00D8C43F /* perspective.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA565F9717610B3A00D8C43F /* perspective.cpp */; };
+		AA565F9A17610B3A00D8C43F /* perspective.h in Headers */ = {isa = PBXBuildFile; fileRef = AA565F9817610B3A00D8C43F /* perspective.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AA565F85176103CF00D8C43F /* rle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rle.c; sourceTree = "<group>"; };
-		AAAE71B4175E5FF600196314 /* liblibimage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibimage.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAAE71BB175E600200196314 /* image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = image.cpp; sourceTree = "<group>"; };
-		AAAE71BC175E600200196314 /* image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image.h; sourceTree = "<group>"; };
+		AA565F9017610B2900D8C43F /* liblibperspective.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibperspective.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA565F9717610B3A00D8C43F /* perspective.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = perspective.cpp; sourceTree = "<group>"; };
+		AA565F9817610B3A00D8C43F /* perspective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perspective.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AAAE71B1175E5FF600196314 /* Frameworks */ = {
+		AA565F8D17610B2900D8C43F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -30,20 +28,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AAAE71AB175E5FF600196314 = {
+		AA565F8717610B2900D8C43F = {
 			isa = PBXGroup;
 			children = (
-				AAAE71BB175E600200196314 /* image.cpp */,
-				AAAE71BC175E600200196314 /* image.h */,
-				AA565F85176103CF00D8C43F /* rle.c */,
-				AAAE71B5175E5FF600196314 /* Products */,
+				AA565F9717610B3A00D8C43F /* perspective.cpp */,
+				AA565F9817610B3A00D8C43F /* perspective.h */,
+				AA565F9117610B2900D8C43F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AAAE71B5175E5FF600196314 /* Products */ = {
+		AA565F9117610B2900D8C43F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AAAE71B4175E5FF600196314 /* liblibimage.a */,
+				AA565F9017610B2900D8C43F /* liblibperspective.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,74 +48,73 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		AAAE71B2175E5FF600196314 /* Headers */ = {
+		AA565F8E17610B2900D8C43F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAAE71BE175E600200196314 /* image.h in Headers */,
+				AA565F9A17610B3A00D8C43F /* perspective.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AAAE71B3175E5FF600196314 /* libimage */ = {
+		AA565F8F17610B2900D8C43F /* libperspective */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AAAE71B8175E5FF600196314 /* Build configuration list for PBXNativeTarget "libimage" */;
+			buildConfigurationList = AA565F9417610B2900D8C43F /* Build configuration list for PBXNativeTarget "libperspective" */;
 			buildPhases = (
-				AAAE71B0175E5FF600196314 /* Sources */,
-				AAAE71B1175E5FF600196314 /* Frameworks */,
-				AAAE71B2175E5FF600196314 /* Headers */,
+				AA565F8C17610B2900D8C43F /* Sources */,
+				AA565F8D17610B2900D8C43F /* Frameworks */,
+				AA565F8E17610B2900D8C43F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = libimage;
-			productName = libimage;
-			productReference = AAAE71B4175E5FF600196314 /* liblibimage.a */;
+			name = libperspective;
+			productName = libperspective;
+			productReference = AA565F9017610B2900D8C43F /* liblibperspective.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AAAE71AC175E5FF600196314 /* Project object */ = {
+		AA565F8817610B2900D8C43F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Ethan Laur";
 			};
-			buildConfigurationList = AAAE71AF175E5FF600196314 /* Build configuration list for PBXProject "libimage" */;
+			buildConfigurationList = AA565F8B17610B2900D8C43F /* Build configuration list for PBXProject "libperspective" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = AAAE71AB175E5FF600196314;
-			productRefGroup = AAAE71B5175E5FF600196314 /* Products */;
+			mainGroup = AA565F8717610B2900D8C43F;
+			productRefGroup = AA565F9117610B2900D8C43F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AAAE71B3175E5FF600196314 /* libimage */,
+				AA565F8F17610B2900D8C43F /* libperspective */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AAAE71B0175E5FF600196314 /* Sources */ = {
+		AA565F8C17610B2900D8C43F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAAE71BD175E600200196314 /* image.cpp in Sources */,
-				AA565F86176103CF00D8C43F /* rle.c in Sources */,
+				AA565F9917610B3A00D8C43F /* perspective.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		AAAE71B6175E5FF600196314 /* Debug */ = {
+		AA565F9217610B2900D8C43F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -150,7 +146,7 @@
 			};
 			name = Debug;
 		};
-		AAAE71B7175E5FF600196314 /* Release */ = {
+		AA565F9317610B2900D8C43F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -175,7 +171,7 @@
 			};
 			name = Release;
 		};
-		AAAE71B9175E5FF600196314 /* Debug */ = {
+		AA565F9517610B2900D8C43F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
@@ -183,7 +179,7 @@
 			};
 			name = Debug;
 		};
-		AAAE71BA175E5FF600196314 /* Release */ = {
+		AA565F9617610B2900D8C43F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
@@ -194,25 +190,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AAAE71AF175E5FF600196314 /* Build configuration list for PBXProject "libimage" */ = {
+		AA565F8B17610B2900D8C43F /* Build configuration list for PBXProject "libperspective" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AAAE71B6175E5FF600196314 /* Debug */,
-				AAAE71B7175E5FF600196314 /* Release */,
+				AA565F9217610B2900D8C43F /* Debug */,
+				AA565F9317610B2900D8C43F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AAAE71B8175E5FF600196314 /* Build configuration list for PBXNativeTarget "libimage" */ = {
+		AA565F9417610B2900D8C43F /* Build configuration list for PBXNativeTarget "libperspective" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AAAE71B9175E5FF600196314 /* Debug */,
-				AAAE71BA175E5FF600196314 /* Release */,
+				AA565F9517610B2900D8C43F /* Debug */,
+				AA565F9617610B2900D8C43F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AAAE71AC175E5FF600196314 /* Project object */;
+	rootObject = AA565F8817610B2900D8C43F /* Project object */;
 }

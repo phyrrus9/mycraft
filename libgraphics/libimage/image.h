@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include "libpixel/pixel.h"
+#include "rle.h"
 
 class image
 {
