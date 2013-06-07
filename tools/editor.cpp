@@ -36,6 +36,12 @@ int main(int argc, char * * argv)
 			if (c == '4')
 				a = GREEN;
 			if (c == '5')
+				a = CYAN;
+			if (c == '6')
+				a = MAGENTA;
+			if (c == 7)
+				a = YELLOW;
+			if (c == '8')
 				b = false;
 			p.setPixel(x, y, a, b);
 			if (automove)

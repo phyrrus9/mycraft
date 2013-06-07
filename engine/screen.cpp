@@ -13,6 +13,7 @@ screen::screen()
     grass = new image("..//images/grass.image");
     brick = new image("../images/brick.image");
     obsidian = new image("../images/obsidian.image");
+    torch = new image("../images/torch.image");
     toolBox = new rectangle(10, 10, BLUE);
     mouseSelect = new rectangle(10, 10, MAGENTA);
     mousex = 105;
@@ -31,10 +32,12 @@ void screen::draw()
     i.placeImage(*grass, 1, 1);
     i.placeImage(*brick, 11, 1);
     i.placeImage(*obsidian, 21, 1);
+    i.placeImage(*torch, 31, 1);
     i.placeImage(toolBox->getObject(), 0, 0);
     i.placeImage(toolBox->getObject(), 10, 0);
     i.placeImage(toolBox->getObject(), 20, 0);
     i.placeImage(toolBox->getObject(), 30, 0);
+    i.placeImage(toolBox->getObject(), 40, 0);
     int x = 5;
     if (selectedObject == 1)
         x = 5;
@@ -44,13 +47,15 @@ void screen::draw()
         x = 25;
     if (selectedObject== 4)
         x = 35;
+    if (selectedObject == 5)
+        x = 45;
     i.setPixel(x, 5, YELLOW, true);
     mouse.blank();
     mouse.placeImage(mouseSelect->getObject(), mousex - 1, mousey - 1);
     //mouse.setPixel(mousex, mousey, MAGENTA, true);
     scr.blank();
     scr.placeImage(sandbox, 0, 0);
-    scr.placeImage(i, 75, 75);
+    scr.placeImage(i, 65, 75);
     scr.placeImage(mouse, 0, 0);
 }
 
@@ -63,6 +68,8 @@ void screen::insertObject()
     if (selectedObject == 3)
         sandbox.placeImage(*obsidian, mousex, mousey);
     if (selectedObject == 4)
+        sandbox.placeImage(*torch, mousex, mousey);
+    if (selectedObject == 5)
     {
         for (int sx = 0; sx < 10; sx++)
         {
@@ -91,14 +98,14 @@ void screen::moveMouse(moveDirection d)
             mousey += 10;
             break;
     }
-    if (mousey > 80)
-        mousey = 80;
-    if (mousey < 10)
-        mousey = 10;
-    if (mousex > 200)
-        mousex = 200;
-    if (mousex < 10)
-        mousex = 10;
+    if (mousey > 85)
+        mousey = 85;
+    if (mousey < 5)
+        mousey = 5;
+    if (mousex > 205)
+        mousex = 205;
+    if (mousex < 5)
+        mousex = 5;
 }
 
 void screen::setSelectedObject(int o)

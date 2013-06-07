@@ -7,7 +7,7 @@ int main()
 	initscr();
 	refresh();
 	noecho();
-    screen scr;
+	screen scr;
 	char c;
 	do
 	{
@@ -21,6 +21,8 @@ int main()
 			scr.setSelectedObject(3);
 		if (c == '4')
 			scr.setSelectedObject(4);
+		if (c == '5')
+			scr.setSelectedObject(5);
 		if (c == 'w')
 			scr.moveMouse(UP);
 		if (c == 'a')
@@ -30,7 +32,7 @@ int main()
 		if (c == 'd')
 			scr.moveMouse(RIGHT);
 		if (c == '\n')
-            scr.insertObject();
+            		scr.insertObject();
 	} while (c != 'Q');
 	endwin();
 }

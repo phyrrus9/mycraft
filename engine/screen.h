@@ -26,6 +26,7 @@ protected:
     image *grass;//("../images/grass.image");
 	image *brick;//("../images/brick.image");
 	image *obsidian;//("../images/obsidian.image");
+    image *torch;
     rectangle *toolBox;//(10, 10, BLUE);
 	rectangle *mouseSelect;//(10, 10, MAGENTA);
     int mousex, mousey;
